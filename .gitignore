@@ -1,0 +1,5 @@
+# Ignorar entornos virtuales de Python
+venv/
+env/
+.env  # Si tienes un archivo .env para variables de entorno
+/venv_proyecto_III
