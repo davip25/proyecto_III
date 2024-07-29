@@ -1,4 +1,10 @@
 import pandas as pd
 
-df = pd.read_csv(r"C:\Users\HP\Downloads\dataset.csv", nrows=1)  # Read first 100 rows
-print(df.head())
+data=pd.read_parquet(r"C:\Users\HP\Downloads\archive (3)\recipes.parquet")
+print(data.head())
+
+print(data.info())
+
+print('hola')
+
+data.tail(10)
