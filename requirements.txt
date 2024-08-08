@@ -5,3 +5,7 @@ matplotlib
 pyarrow
 deep-translator
 streamlit_echarts
+plotly
+seaborn
+unidecode
+statsmodels
