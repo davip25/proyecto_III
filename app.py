@@ -3,12 +3,10 @@ from Inicio import main as inicio_main
 from main import main as main_main
 
 st.set_page_config(
-
     page_title="Inicio",
     page_icon=":guardsman:",
     layout="wide",
     initial_sidebar_state="expanded"
-
 )
 
 # Agrega tus rutas aquí
@@ -17,8 +15,22 @@ pages = {
     "Recomendador de Alimentos": main_main,
 }
 
-# Selecciona la página en el menú desplegable
-page = st.sidebar.selectbox("Selecciona una página", list(pages.keys()))
+# Inicializa la sesión
+if "page" not in st.session_state:
+    st.session_state.page = "Inicio"
 
-# Carga la página seleccionada
-pages[page]()
+# Crea botones en el sidebar
+inicio_button = st.sidebar.button("Inicio")
+recomendador_button = st.sidebar.button("Recomendador de Alimentos")
+
+# Actualiza la página actual
+if inicio_button:
+    st.session_state.page = "Inicio"
+elif recomendador_button:
+    st.session_state.page = "Recomendador de Alimentos"
+
+# Renderiza la página correspondiente
+if st.session_state.page == "Inicio":
+    inicio_main()
+elif st.session_state.page == "Recomendador de Alimentos":
+    main_main()

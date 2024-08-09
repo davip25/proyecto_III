@@ -1,5 +1,6 @@
 import streamlit as st
 
+
 def main():
     st.write("# Sistema de Recomendación de Alimentos")
     st.markdown(
