@@ -10,7 +10,7 @@ from recomendador_alimento import Recomendacion
 from display import display_header, display_form, display_user_data, display_calculated_data, display_recommendations
 
 def main():
-    display_header("Recomendador de Alimentos")
+    display_header("🍙 Recomendador de Alimentos 🍙")
 
     # Crear el formulario
     edad, altura, peso, genero, actividad, objetivo_comidas, cant_comidas, submit_button = display_form()

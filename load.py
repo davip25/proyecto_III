@@ -1,6 +1,7 @@
 import pandas as pd
 import joblib
 import os
+import streamlit as st
 
 def load():
     sources = 'sources'
@@ -24,3 +25,13 @@ def load():
     sugars = data_compilada['sugars'].values
 
     return scaler, nneigh, food_names, caloric_values, fats, carbohydrates, proteins, sugars
+
+def load_images():
+
+    images = []
+    images.append(os.path.join("sources", "alimentos.jpeg"))
+    images.append(os.path.join("sources", "scikit_learn_logo.png"))
+    images.append(os.path.join("sources", "kaggle_logo.png"))
+    images.append(os.path.join("sources", "github_logo.png"))
+
+    return images
