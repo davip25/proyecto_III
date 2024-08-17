@@ -1,4 +1,6 @@
 import utils
+import random
+import time
 
 class Persona:
 
@@ -89,10 +91,13 @@ class Persona:
 
     def generar_valores_aleatorios(self):
 
-        caloric_values = utils.random_values(self.calculador_calorias(), self.cant_comidas)
-        fats = utils.random_values(self.calculador_calorias() * 0.3 / 9, self.cant_comidas)
-        carbohydrates = utils.random_values(self.calculador_calorias() * 0.55 / 4, self.cant_comidas)
-        proteins = utils.random_values(self.calculador_calorias() * 0.15 / 4, self.cant_comidas)
-        sugars = utils.random_values(self.calculador_calorias() * 0.1 / 4, self.cant_comidas)
+            seed = int(time.time() * 1000)
+            random.seed(seed)
 
-        return caloric_values, fats, carbohydrates, proteins, sugars
+            caloric_values = utils.random_values(self.calculador_calorias(), self.cant_comidas)
+            fats = utils.random_values(self.calculador_calorias() * 0.3 / 9, self.cant_comidas)
+            carbohydrates = utils.random_values(self.calculador_calorias() * 0.55 / 4, self.cant_comidas)
+            proteins = utils.random_values(self.calculador_calorias() * 0.15 / 4, self.cant_comidas)
+            sugars = utils.random_values(self.calculador_calorias() * 0.1 / 4, self.cant_comidas)
+
+            return caloric_values, fats, carbohydrates, proteins, sugars

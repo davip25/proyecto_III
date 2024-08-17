@@ -15,6 +15,8 @@ def main():
     # Crear el formulario
     edad, altura, peso, genero, actividad, objetivo_comidas, cant_comidas, submit_button = display_form()
 
+    persona = Persona(edad, altura, peso, genero, actividad, objetivo_comidas, cant_comidas)
+
     # Mostrar los datos ingresados
     if submit_button:
         datos_usuario = {
@@ -27,25 +29,30 @@ def main():
             "cant_comidas": cant_comidas
         }
 
-        persona = Persona(datos_usuario['edad'],
-                          datos_usuario['altura'],
-                          datos_usuario['peso'],
-                          datos_usuario['genero'],
-                          datos_usuario['actividad'],
-                          datos_usuario['objetivo_comidas'],
-                          datos_usuario['cant_comidas']
-                          )
+        # Cargar datos de alimentos
+        scaler, nneigh, food_names, caloric_values, fats, carbohydrates, proteins, sugars = load()
 
-        scaler, nneigh,  food_names, caloric_values, fats, carbohydrates, proteins, sugars = load()
+        # Crear recomendador
+        recomendador = Recomendacion(scaler, nneigh, food_names, caloric_values, fats, carbohydrates, proteins, sugars)
 
-        recomendador = Recomendacion(scaler, nneigh,  food_names, caloric_values, fats, carbohydrates, proteins, sugars)
-
-        valores_aleatorios = persona.generar_valores_aleatorios()
-        recomendaciones = recomendador.generar_recomendaciones(*valores_aleatorios)
-        
+        # Mostrar datos del usuario
         display_user_data(persona)
+
+        # Mostrar datos calculados
         display_calculated_data(persona)
+
+        # Generar recomendaciones
+        with st.spinner("Generando recomendaciones..."):
+
+            valores_aleatorios = persona.generar_valores_aleatorios()
+            recomendaciones = recomendador.generar_recomendaciones(*valores_aleatorios)
+
+        # Mostrar recomendaciones
+        st.success("✅ Recomendaciones generadas correctamente! ")
         display_recommendations(recomendaciones)
+
+        # Almacena el estado de la sesión
+        st.session_state.recomendaciones = recomendaciones
 
 if __name__ == "__main__":
     main()
