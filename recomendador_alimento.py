@@ -14,7 +14,7 @@ class Recomendacion:
     def generar_recomendaciones(self, caloric_values, fats, carbohydrates, proteins, sugars):
         input_values = np.array([caloric_values, fats, carbohydrates, proteins, sugars]).T
         input_scaled = self.scaler.transform(input_values)
-        distances, indices = self.nneigh.kneighbors(input_scaled, n_neighbors=10)
+        distances, indices = self.nneigh.kneighbors(input_scaled, n_neighbors=5)
         recommended_foods = self.food_names[indices]
         Calorias = self.caloric_values[indices]
         Grasas = self.fats[indices]
