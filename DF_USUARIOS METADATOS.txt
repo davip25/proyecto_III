@@ -1,0 +1,126 @@
+🔍 Características del conjunto de datos:
+
+🍽 GPA: El promedio de calificaciones del individuo.
+
+🚻 Género: El género del encuestado.
+
+🥞 Desayuno: Indica si el encuestado desayuna (1 para sí, 0 para no).
+
+🍗 Calorías de pollo: la cantidad de calorías consumidas del pollo.
+
+📅 Calorías Día: Ingesta total diaria de calorías.
+
+🍩 Scone de Calorías: Calorías consumidas de los scones.
+
+☕ Café: Frecuencia de consumo de café.
+
+🍫 Comida reconfortante: Tipos de comida reconfortante preferida por el individuo.
+
+📋 Razones de comida reconfortante: Razones para consumir comida reconfortante.
+
+🔢 Razones de alimentos reconfortantes codificados: códigos numéricos de los motivos detrás del consumo de alimentos reconfortantes.
+
+👩‍🍳 Cocinar: Indica si el encuestado cocina (1 para sí, 0 para no).
+
+🍴 Cocina: Tipo de cocina preferido.
+
+🥗 Dieta Actual: Dieta actual que sigue el individuo.
+
+🔢 Dieta Actual Codificada: Códigos numéricos de las dietas actuales.
+
+🥤 Bebida: Bebidas preferidas.
+
+🔄Cambios alimentarios: Cambios en los hábitos alimentarios a lo largo del tiempo.
+
+🔢 Cambios alimentarios codificados: Códigos numéricos para cambios de hábitos alimentarios.
+
+🍽 Comer fuera de casa: Frecuencia de comer fuera de casa.
+
+💼 Empleo: Situación laboral del encuestado.
+
+🌍Comida Étnica: Preferencia por la comida étnica.
+
+🏋️Ejercicio: Frecuencia del ejercicio.
+
+👨‍🎓 Educación del padre: Nivel de educación del padre del encuestado.
+
+👨‍🏫 Profesión del Padre: Profesión del padre del demandado.
+
+🍛 Cocina favorita: tipo de cocina favorita.
+
+🍲 Comida favorita: Comida favorita.
+
+👶 Alimentación Infancia: Preferencias alimentarias de la infancia.
+
+🍟Papas fritas: Frecuencia de consumo de papas fritas.
+
+🍏Día de la fruta: Ingesta diaria de fruta.
+
+📚 Nivel de grado: Nivel de grado educativo.
+
+🇬🇷 Comida griega: Preferencia por la comida griega.
+
+😌Sensación Saludable: Autopercepción de salud.
+
+🥗Comida Saludable: Frecuencia de consumo de comidas saludables.
+
+🥗 Dieta ideal: Dieta ideal según el encuestado.
+
+🔢 Dieta Ideal Codificada: Códigos numéricos para dietas ideales.
+
+💰 Ingresos: Nivel de ingresos del encuestado.
+
+🇮🇳 Comida India: Preferencia por la comida india.
+
+🍝Comida Italiana: Preferencia por la comida italiana.
+
+💪 Life Rewarding: Percepción de que la vida es gratificante.
+
+💍 Estado Civil: Estado civil del encuestado.
+
+👥Comidas Cena Amigo: Frecuencia de cenar con amigos.
+
+👩‍🎓 Educación de la Madre: Nivel de educación de la madre del encuestado.
+
+👩‍🏫 Profesión Madre: Profesión de la madre del encuestado.
+
+🔍 Chequeo Nutricional: Frecuencia de verificación de la información nutricional.
+
+🏠 Dentro/Fuera del Campus: Situación de vivienda (dentro o fuera del campus).
+
+👩‍🍳 Cocina de los Padres: Indica si los padres cocinan (1 para sí, 0 para no).
+
+💸 Pay Meal Out: Monto gastado en comer fuera.
+
+🇮🇷 Comida Persa: Preferencia por la comida persa.
+
+⚖ Autopercepción Peso: Autopercepción del peso.
+
+🍜 Sopa: Frecuencia de consumo de sopa.
+
+🏀 Deportes: Participación en actividades deportivas.
+
+🍜 Comida tailandesa: Preferencia por la comida tailandesa.
+
+🌯 Calorías de tortilla: Calorías consumidas de las tortillas.
+
+🦃 Calorías de pavo: Calorías consumidas del pavo.
+
+🏋️‍♂️ Tipo Deportes: Tipos de deportes en los que participa.
+
+🥦Día de las verduras: Ingesta diaria de verduras.
+
+💊Vitaminas: Frecuencia de ingesta de vitaminas.
+
+🧇 Calorías de gofres: Calorías consumidas de los gofres.
+
+⚖ Peso: Peso autoinformado.
+
+Explorar este conjunto de datos puede ayudar con:
+
+Análisis nutricional: comprensión de los hábitos alimentarios y la ingesta nutricional.
+Estudios de Comportamiento: Analizando las preferencias alimentarias y las razones detrás de ellas.
+Investigación en salud: investigación del impacto de la dieta en la salud y el bienestar.
+Investigación de Mercado: Identificación de tendencias en el consumo y preferencias de alimentos.
+Perspectivas educativas: suministro de datos para la investigación académica en nutrición y salud pública.
+Este conjunto de datos es un tesoro para cualquiera que busque profundizar en los hábitos alimentarios, las preferencias y los comportamientos nutricionales, y ofrece información completa sobre diversos factores que influyen en los patrones alimentarios y la salud.
